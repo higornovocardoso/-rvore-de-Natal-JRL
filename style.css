@@ -17,7 +17,7 @@ header {
     width: 400px;
     margin: 100px auto;
     position: relative;
-    background: url('img/Árvore\ de\ Natal.png') no-repeat center center;
+    background: url('Árvore de Natal.png') no-repeat center center;
     background-size: cover;
     height: 400px;
 }
