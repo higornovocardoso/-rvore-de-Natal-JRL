@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore Interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Árvore de Natal JRL</h1>
+        <p>Clique nas bolinhas para conhecer nossos parceiros!</p>
+    </header>
+    <main>
+        <div class="tree">
+            <!-- Bolinhas da árvore -->
+            <div class="ball small" style="top: 200px; left: 200px;" onclick="handleClick('https://site1.com', 50)"></div>
+            <div class="ball medium" style="top: 300px; left: 80px;" onclick="handleClick('https://site2.com', 100)"></div>
+            <div class="ball large" style="top: 48px; left: 178px;" onclick="handleClick('https://site3.com', 200)"></div>
+        </div>
+        <div class="counter">
+            <p>Total arrecadado: <span id="total">R$ 0,00</span></p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Escola José Rodrigues. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

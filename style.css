@@ -1,0 +1,85 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.tree {
+    width: 400px;
+    margin: 100px auto;
+    position: relative;
+    background: url('img/Árvore\ de\ Natal.png') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ball:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.ball {
+    animation: pulse 2s infinite;
+}
+
+.small {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.medium {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+}
+
+.large {
+    width: 40px;
+    height: 40px;
+    background-color: gold;
+}
+
+.counter {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ffcc00;
+}
+
+footer {
+    padding: 10px;
+    background-color: #222;
+    color: #888;
+    font-size: 14px;
+}
